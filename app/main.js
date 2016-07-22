@@ -7,12 +7,13 @@ import About from './About';
 import Home from './Home';
 import Repos from './Repos';
 
-import { Router, Route, Link } from 'react-router';
+import { Router, Route, IndexRoute, Link } from 'react-router';
 import { hashHistory } from 'react-router'
 
 render((
     <Router history={hashHistory}>
         <Route path="/" component={App}>
+            <IndexRoute component={Home}/>
             <Route path="about" component={About}/>
             <Route path="repos" component={Repos}/>
         </Route>
