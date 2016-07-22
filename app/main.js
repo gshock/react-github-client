@@ -19,7 +19,7 @@ render((
             <Route path="about" component={About} title="About Us"/>
             <Route path="repos" component={Repos}>
                 {/* Add the route, nested where we want the UI to nest */}
-                <Route path="details/:repo_name" component={RepoDetails} />
+                <Route path="/repo/:repo_name" component={RepoDetails} />
             </Route>
         </Route>
     </Router>
