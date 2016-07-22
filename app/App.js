@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header>App</header>
+        <header><Link to="/">App</Link></header>
         <menu>
           <ul>
             <li><Link to="/about">About</Link></li>
@@ -27,6 +27,8 @@ class App extends Component {
       </div>
     );
   }
+
+
 }
 
 export default App
