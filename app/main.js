@@ -16,7 +16,7 @@ render((
     <Router history={hashHistory}>
         <Route path="/" component={App}>
             <IndexRoute component={Home}/>
-            <Route path="about" component={About}/>
+            <Route path="about" component={About} title="About Us"/>
             <Route path="repos" component={Repos}>
                 {/* Add the route, nested where we want the UI to nest */}
                 <Route path="details/:repo_name" component={RepoDetails} />
