@@ -19,8 +19,8 @@ class App extends Component {
         <header><Link to="/">App</Link></header>
         <menu>
           <ul>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/repos">Repos</Link></li>
+            <li><Link to="/about" activeClassName="active">About</Link></li>
+            <li><Link to="/repos" activeClassName="active">Repos</Link></li>
           </ul>
         </menu>
         {this.props.children}
